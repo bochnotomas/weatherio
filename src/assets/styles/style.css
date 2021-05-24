@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+}
+
+.dashboard_wrapper {
+    background-image: url("../../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+}
+
+.today_dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 15px 0 15px;
+}
+.logo {
+    font-size: 32px;
+}
+.today_dashboard_lower {
+    display: flex;
+}
+
+.degrees {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.degrees h1 {
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.today_dashboard_data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.location nobr {
+    font-size: 32px;
+}
+
+.weather_image img {
+    width: 80px;
+    height: auto;
+}
+
+.time_date small {
+    font-size: 16px;
+}
+
+/*bottom part of the dashboard */
+
+.week_dashboard {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+}
+
+/*upper section of the lower part*/
+
+.search_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 7vh;
+}
+
+#search_location {
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid white;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 100;
+    cursor: default;
+    width: 100%;
+}
+::placeholder {
+    color: white;
+}
+
+#submit_location {
+    background: url("../../images/search.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0;
+    display: block;
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* week section */
+
+.data_section {
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+}
+
+.container_content {
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    align-items: center;
+}
+
+.content_row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+/*footer section*/
+
+.footer_section {
+    height: 7vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer_section .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.footer_section h2 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer_section .links a img {
+    width: 40px;
+    height: auto;
+}
+
+.links a {
+    padding-right: 25px;
+}
+
+@media only screen and (min-width: 992px) {
+    .dashboard_wrapper {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+    }
+
+    .today_dashboard {
+        padding: 35px 0px 60px 40px;
+    }
+
+    .week_dashboard {
+        margin-top: 0;
+    }
+
+    .degrees h1 {
+        font-size: 128px;
+    }
+
+    .location nobr {
+        font-size: 64px;
+    }
+
+    .time_date small {
+        font-size: 28px;
+    }
+
+    #search_location {
+        font-size: 32px;
+    }
+
+    .content_row span {
+        font-size: 20px;
+    }
+
+    .footer_section h2 {
+        font-size: 20px;
+    }
+}

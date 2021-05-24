@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatherio</title>
+    <link rel="stylesheet" href="../src/assets/styles/style.css">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+</head>
+<body>
+
+    <main class= "dashboard_wrapper">
+        
+        <section class="today_dashboard">
+            <div class="today_dashboard_upper">
+                <h1 class="logo">weatherio</h1>    
+            </div>
+            <div class="today_dashboard_lower">
+                <div class="degrees">
+                    <h1>12°</h1>
+                </div>
+                <div class="today_dashboard_data">
+                    <div class="location">
+                        <nobr>London</nobr>
+                        <div class="weather_image">
+                            <img src="../src/images/weather_icons/sunny.png">
+                        </div>
+                    </div>
+                    <div class="time_date">
+                        <small>10:10 - Monday, 9 Sep '21</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="week_dashboard">
+            <form action="" class="search_section">
+                <input type="text" placeholder= "Search" value="London" id="search_location">
+                <input type="submit" value="" id="submit_location">
+            </form>
+
+            <div class="data_section">
+                <div class="data_container">
+                    <div class="container_content">     
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_section">
+                <h2>Tomas Bochnovic, '21</h2>
+                <div class="links">
+                    <a href="https://github.com/bochnotomas"><img src="../src/images/github.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/tomasbochnovic/"><img src="../src/images/linkedin.png" alt=""></a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
