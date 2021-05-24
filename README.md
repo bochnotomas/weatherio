@@ -13,5 +13,5 @@ Dashboard made in asynchronous vanilla javascript and webpack.
 # How to run
 
 1. Clone/download repository
-2. Replace the YOUR_API_KEY with your api key from OpenWeather
+2. Replace the YOUR_API_KEY in '/.env' file with your api key from OpenWeather.
 3. Open the index.html in your browser
